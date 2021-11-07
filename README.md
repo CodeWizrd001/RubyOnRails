@@ -1,13 +1,14 @@
-# README
+# Todo App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+A todo app implemented in Ruby on Rails
 
 * Ruby version
+  - 3.0.2
 
 * System dependencies
+  - Ruby
+  - Node
+  - Yarn
 
 * Configuration
 
@@ -16,9 +17,9 @@ Things you may want to cover:
 * Database initialization
 
 * How to run the test suite
+  - rails test    -   To start test
 
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-
-* ...
+  - rails server  -   To start the server
