@@ -13,17 +13,18 @@ class BookController < ApplicationController
     def addBook
         @book = Book.new(book_params)
         
-        puts @book 
+        # puts @book 
+        # puts book_params
 
         if @book.save 
             render json: {status: 'SUCCESS' , book: @book} , status: :ok
         else
-            render json: {status: 'FAILED' , error:@book.errors} , status: :bad_request
+            render json: {status: 'FAILED' , error: @book.errors} , status: :bad_request
         end
     end
 
     private 
         def book_params
-            params.permit(:B_id,:B_title,:Author,:Publisher,:Year)
+            params.permit(:B_id,:B_title,:Author,:Publisher,:Year,:book)
         end
 end
